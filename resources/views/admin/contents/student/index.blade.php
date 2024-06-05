@@ -13,6 +13,7 @@
     <section class="section">
         <div class="card">
             <div class="card-body">
+                <a href="/admin/student/create" class="btn btn-primary my-2">+ Student</a>
                 <table class="table">
                     <tr>
                         <th>No</th>

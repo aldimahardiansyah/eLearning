@@ -18,4 +18,23 @@ class StudentController extends Controller
             'students' => $students
         ]);
     }
+
+    // method untuk menampilkan form tambah student
+    public function create()
+    {
+        // panggil view
+        return view('admin.contents.student.create');
+    }
+
+    // method untuk menyimpan data student
+    public function store(Request $request)
+    {
+        // validasi data
+        $request->validate([
+            'name' => 'required',
+            'nim' => 'required|numeric',
+            'major' => 'required',
+            'class' => 'required'
+        ]);
+    }
 }
