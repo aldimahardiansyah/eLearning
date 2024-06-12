@@ -21,6 +21,7 @@
                         <th>NIM</th>
                         <th>Class</th>
                         <th>Major</th>
+                        <th>Course</th>
                         <th>Action</th>
                     </tr>
                     @foreach ($students as $student)
@@ -30,6 +31,7 @@
                             <td>{{ $student->nim }}</td>
                             <td>{{ $student->class }}</td>
                             <td>{{ $student->major }}</td>
+                            <td>{{ $student->course->name ?? 'Belum mengikuti course' }}</td>
                             <td>
                                 <a href="#" class="btn btn-warning">Edit</a>
                                 <a href="#" class="btn btn-danger">Hapus</a>
